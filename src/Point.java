@@ -40,4 +40,8 @@ public class Point {
         x +=   offX;
         y +=   offY;
     }
+
+    public static double getDistance(Point p1, Point p2) {
+        return new Segment(p1, p2).getModule();
+    }
 }
